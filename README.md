@@ -1,17 +1,27 @@
-# doma_app
+# ⌚ DOMA Wear OS - Smart Fitness Timer
 
-A new Flutter project.
+Este projeto foi desenvolvido como parte da disciplina de Desenvolvimento Mobile/Wearables. O objetivo é criar um cronômetro inteligente para Wear OS (Android) que demonstra integração profunda com o hardware nativo do dispositivo via MethodChannels.
 
-## Getting Started
+🔗 **Link do Repositório:** [https://github.com/mattosz10/doma_wear_os](https://github.com/mattosz10/doma_wear_os)
 
-This project is a starting point for a Flutter application.
+## 🚀 Funcionalidades Principais
 
-A few resources to get you started if this is your first Flutter project:
+* **Cronômetro de Treino:** Interface otimizada para telas circulares (SingleChildScrollView) para evitar overflow.
+* **Feedback Tátil (Haptic):** Vibração ao atingir 10 segundos para alerta de marcos de treino.
+* **Gestão de Áudio Nativa (Kotlin):**
+    * Identificação de alto-falantes e Bluetooth (`AudioDeviceInfo`).
+    * Detecção dinâmica via `registerAudioDeviceCallback`.
+    * Atalho direto para Configurações de Bluetooth via Intent Nativa.
+* **Feedback Auditivo:** Alerta sonoro de sistema ao atingir tempos específicos (Item 6 do roteiro).
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🛠️ Tecnologias Utilizadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Flutter:** Interface e lógica de estado.
+* **Kotlin (Android Nativo):** Acesso às APIs de hardware e sistema operacional.
+* **Audioplayers:** Plugin para execução de áudio.
+
+## ⚙️ Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/mattosz10/doma_wear_os.git](https://github.com/mattosz10/doma_wear_os.git)
